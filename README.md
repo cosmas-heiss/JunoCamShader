@@ -13,6 +13,16 @@ The project features:
 
 Add a folder inside the repository named `/Data`, the downloader will put all needed files in there. As the images are downloaded in `.zip` archives, the downloader will create a temporary repository `tmp` inside `/Data`, from which the archives are extracted.
 
+There is a bunch of package dependencies. A non-comprehensive list:
+- BeautifulSoup for the NASA website scavenging
+- urllib for the NASA website scavenging
+- ModernGL for all the rendering stuff
+- pillow for saving images
+- tkinter for the gui
+- shutil for moving around and unpacking the .zip files
+- json to read the metadata of the images
+- pyopencv-2 for inpainting dead pixels (you can probably replace this for something cheaper if you don't want to use pyopencv)
+
 A small how-to-use is given in the drop-down menu `Extras`
 
 
